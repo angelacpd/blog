@@ -7,6 +7,7 @@ from . import views
 
 urlpatterns = [
     path('', views.BlogListView.as_view(), name='home'),
+    path('post/<int:pk>', views.BlogDetailView.as_view(), name='post_detail'),
     path(
         "favicon.ico",
         RedirectView.as_view(url=staticfiles_storage.url("favicon.ico")),
