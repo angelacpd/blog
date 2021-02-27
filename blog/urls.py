@@ -10,8 +10,6 @@ urlpatterns = [
     path('post/<int:pk>', views.BlogDetailView.as_view(), name='post_detail'),
     path('post/new/', views.BlogCreateView.as_view(), name='post_new'),
     path('post/<int:pk>/edit/', views.BlogUpdateView.as_view(), name='post_edit'),
-    path(
-        "favicon.ico",
-        RedirectView.as_view(url=staticfiles_storage.url("favicon.ico")),
-    ),
+    path('post/<int:pk>/delete/', views.BlogDeleteView.as_view(), name='post_delete'),
+    path("favicon.ico", RedirectView.as_view(url=staticfiles_storage.url("favicon.ico"))),
 ]
