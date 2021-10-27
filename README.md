@@ -2,7 +2,8 @@
 
 This project creates a blog using Django's Signup, Login, and Logout features. 
 It uses Django's generic views to Create, Read, Update, and Delete posts.
-It also uses basic CSS.
+It also uses basic CSS and serve static files using WhiteNoise.
+http://whitenoise.evans.io/en/stable/django.html
 
 #### Environment variables
 Create a .env file and add:
